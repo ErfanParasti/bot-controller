@@ -1,4 +1,4 @@
-# bot-controller
+# Bot-controller
 
 
 ```markdown
