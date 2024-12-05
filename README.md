@@ -1,6 +1,7 @@
+<!--
 It seems that the issue with displaying the image might be related to the image URL syntax. Here's how you can fix it and improve the markdown:
 
-### Correct Image URL:
+ ### Correct Image URL:
 To display an image properly, make sure the path is correct and the image exists. If you are linking to an online image, ensure you use a valid URL. For example, you can fix the image URL like this:
 
 ```markdown
@@ -13,8 +14,9 @@ Or if you have a local image, use the correct relative or absolute path like thi
 ![UI Screenshot](path/to/screenshot.png)
 ```
 
-### Updated Markdown with Fixed Image and Improved Instructions:
 
+### Updated Markdown with Fixed Image and Improved Instructions:
+-->
 ```markdown
 # Telegram Bot UI
 
