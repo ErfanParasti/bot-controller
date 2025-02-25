@@ -1,78 +1,52 @@
-<!--
-It seems that the issue with displaying the image might be related to the image URL syntax. Here's how you can fix it and improve the markdown:
+# Telegram Bot Controller | کنترلر ربات تلگرام
 
- ### Correct Image URL:
-To display an image properly, make sure the path is correct and the image exists. If you are linking to an online image, ensure you use a valid URL. For example, you can fix the image URL like this:
+**Version 2.1.0** | **نسخه ۲.۱.۰**
 
-```markdown
-![UI Screenshot](https://i.pinimg.com/1200x/91/59/81/91598100adaec3923f0440c5fa2046ec.jpg)
-```
+---
 
-Or if you have a local image, use the correct relative or absolute path like this:
+## 🌍 English Version
 
-```markdown
-![UI Screenshot](path/to/screenshot.png)
-```
+### 🔍 About the Project
+The **Telegram Bot Controller** is a feature-rich, user-friendly **GUI-based application** designed to control a Telegram bot with ease. Built using **Python & PyQt5**, it enables users to **send and receive messages, manage tokens, view chat history, and get notifications** in a sleek **dark-themed UI**.
 
+> ⚠️ **Disclaimer:** This tool is developed **for legal and ethical use only**. The developer is not responsible for any misuse or unauthorized actions performed using this application.
 
-### Updated Markdown with Fixed Image and Improved Instructions:
--->
-```markdown
-# Telegram Bot UI
+### 🚀 Features
+- **Easy Token & Chat ID Management**
+- **Dark Mode Interface**
+- **Real-time Message Retrieval (every 5 seconds)**
+- **Send & Receive Messages**
+- **Message Auto-scroll for Convenience**
+- **Desktop Notifications for New Messages**
+- **Message History Storage**
 
-A modern, feature-rich Telegram bot control panel built using Python and PyQt5. This application allows users to send and receive messages through their Telegram bot with a sleek, dark-themed user interface.
+---
 
-## Features
-
-- **Token & Chat ID Management**: Easily input and save your bot token and chat ID.
-- **Dark Mode UI**: Stylish and intuitive interface with responsive design.
-- **Real-time Message Refresh**: Fetches new messages from the bot every 5 seconds.
-- **Notifications**: Enables or disables system notifications for incoming messages.
-- **Message History**: Displays a list of all sent and received messages, including timestamps and user details.
-- **Interactive Table**: Scrollable table to view message details.
-- **Automatic Scroll**: Automatically scrolls to the latest message for convenience.
-- **User-Friendly Controls**: Placeholder text, rounded corners, and responsive buttons for an optimal user experience.
-
-## Requirements
-
-Before you begin, ensure you have the following installed:
-
-- Python 3.8 or higher
-- `PyQt5` for GUI components
-- `requests` for API communication
-- `plyer` for notifications
-
-Install required packages via pip:
+### 🛠 Installation & Setup
+#### 📌 Prerequisites
+Ensure you have:
+- **Python 3.8+**
+- Required dependencies (**install via pip**):
 
 ```bash
 pip install PyQt5 requests plyer
 ```
 
-## File Structure
-
-- **`bot.json`**: A configuration file saved in the user's `Documents` folder. It stores the bot token, chat ID, and notification preferences.
-
-## How to Run
-
+#### 📌 Running the Application
 1. Clone the repository or download the source code.
-2. Install the required packages using the command mentioned above.
-3. Run the application:
+2. Install dependencies (see above).
+3. Run the script:
 
    ```bash
    python main.py
    ```
 
-4. Enter your bot's token and chat ID, then start sending and receiving messages!
+4. Enter your **bot token** and **chat ID** to start sending and receiving messages.
 
-## Configuration File
+---
 
-The application automatically creates a `bot.json` file in your `Documents` directory to save:
-
-- **Token**: Your bot's API token.
-- **Chat ID**: The chat ID for sending messages.
-- **Notification Preferences**: Whether notifications are enabled or disabled.
-
-Example `bot.json`:
+### 📌 Configuration File (`bot.json`)
+The app automatically creates a configuration file (`bot.json`) in the **Documents** folder:
 
 ```json
 {
@@ -82,37 +56,74 @@ Example `bot.json`:
 }
 ```
 
-## Screenshots
+---
 
-![UI Screenshot](https://i.pinimg.com/1200x/91/59/81/91598100adaec3923f0440c5fa2046ec.jpg)  
-_This screenshot showcases the UI design of the Telegram bot control panel._
+### 📸 Screenshot
+![UI Screenshot](https://i.pinimg.com/1200x/91/59/81/91598100adaec3923f0440c5fa2046ec.jpg)
 
-## Usage Instructions
+---
 
-### Sending a Message
-1. Enter your message in the input field at the bottom.
-2. Click "ارسال" or press `Enter`.
+## 🇮🇷 نسخه فارسی
 
-### Receiving Messages
-The application fetches new messages every 5 seconds. Notifications are displayed if enabled.
+### 🔍 درباره پروژه
+**کنترلر ربات تلگرام** یک برنامه **دارای رابط کاربری گرافیکی (GUI)** برای مدیریت ربات تلگرام است. این ابزار با **Python و PyQt5** توسعه داده شده و به کاربران اجازه می‌دهد که **پیام‌ها را ارسال و دریافت کنند، توکن و چت آیدی را مدیریت کنند، تاریخچه پیام‌ها را ببینند و نوتیفیکیشن دریافت کنند** – همه این‌ها در یک **رابط کاربری مدرن و دارک**.
 
-### Replacing Token and Chat ID
-1. Update the token or chat ID fields.
-2. Click **جایگزینی توکن** to save changes.
+> ⚠️ **سلب مسئولیت:** این ابزار فقط برای **استفاده قانونی و اخلاقی** توسعه داده شده است. توسعه‌دهنده هیچ مسئولیتی در قبال سوءاستفاده یا اقدامات غیرمجاز ندارد.
 
-### Enabling/Disabling Notifications
-Click **فعال‌سازی اعلان‌ها** or **غیرفعال‌سازی اعلان‌ها** to toggle notifications.
+### 🚀 ویژگی‌ها
+- **مدیریت آسان توکن و چت آیدی**
+- **رابط کاربری دارک و مدرن**
+- **دریافت پیام‌های جدید هر ۵ ثانیه**
+- **ارسال و دریافت پیام**
+- **اسکرول خودکار پیام‌ها**
+- **نوتیفیکیشن دسکتاپ برای پیام‌های جدید**
+- **ذخیره تاریخچه پیام‌ها**
 
-## Contribution
+---
 
-Contributions are welcome! If you have suggestions or encounter issues, feel free to open an issue or submit a pull request.
+### 🛠 نصب و اجرا
+#### 📌 پیش‌نیازها
+- **پایتون ۳.۸+**
+- نصب وابستگی‌ها:
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+```bash
+pip install PyQt5 requests plyer
 ```
 
-### Notes on the Changes:
-1. **Image URL**: I fixed the image URL issue. If you are using a local image, make sure the path is correct.
-2. **Improved Readability**: I added an explanation for the screenshot and improved the description of the features to make the instructions clearer.
-3. **Example Configuration**: I included an example `bot.json` to guide users on the required fields.
+#### 📌 نحوه اجرا
+1. پروژه را کلون کنید یا فایل‌های آن را دانلود کنید.
+2. وابستگی‌ها را نصب کنید (طبق دستور بالا).
+3. اسکریپت را اجرا کنید:
+
+   ```bash
+   python main.py
+   ```
+
+4. **توکن ربات** و **چت آیدی** خود را وارد کنید و مدیریت پیام‌ها را شروع کنید!
+
+---
+
+### 📌 فایل تنظیمات (`bot.json`)
+برنامه به‌صورت خودکار یک فایل تنظیمات (`bot.json`) در پوشه **Documents** ایجاد می‌کند:
+
+```json
+{
+    "token": "توکن ربات شما",
+    "chat_id": "چت آیدی شما",
+    "notifications_enabled": true
+}
+```
+
+---
+
+### 📸 اسکرین‌شات
+![UI Screenshot](https://i.pinimg.com/1200x/91/59/81/91598100adaec3923f0440c5fa2046ec.jpg)
+
+---
+
+## 📜 License | مجوز
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+💻 Developed by **Your Friend** | نسخه **۲.۱.۰**
